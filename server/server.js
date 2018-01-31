@@ -28,7 +28,7 @@ app.get('/todos', (req, res) => {
       code: 'asdf'
     });
   }, (e) => {
-
+    res.status(400).send(e);
   })
 });
 
